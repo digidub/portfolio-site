@@ -28,6 +28,13 @@
     color: #edf5e1;
   }
 
+  .page-nav {
+    text-transform: uppercase;
+    font-size: 80%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
   a {
     text-decoration: none;
   }
@@ -41,5 +48,25 @@
   li {
     display: inline;
     padding: 0 0.25em;
+  }
+
+  @media only screen and (min-width: 40em) {
+    .page-header {
+      padding: 1em 0 0.5em 0;
+      border-bottom: 1px solid #379683;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 0;
+    }
+
+    .page-name {
+      text-align: left;
+    }
+
+    li {
+      padding: 0 0 0 2em;
+    }
   }
 </style>
