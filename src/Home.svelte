@@ -23,4 +23,27 @@
   </div>
 </main>
 
-<style></style>
+<style>
+  .skills a {
+    color: #edf5e1;
+    font-weight: 600px;
+  }
+
+  .skills a:hover {
+    border-bottom: 1px solid #edf5e1;
+  }
+
+  @media only screen and (min-width: 65em) {
+    .page-intro {
+      margin: auto;
+      max-width: 500px;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    .skills {
+      margin: auto;
+      max-width: 500px;
+    }
+  }
+</style>
