@@ -1,7 +1,7 @@
 import App from './App.svelte';
 import Header from './Header.svelte';
 
-const app = new Header({
+const app = new App({
   target: document.body,
 });
 
