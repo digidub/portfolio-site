@@ -6,7 +6,6 @@
 <div class="container">
   <div class="wrapper">
     <Header />
-    <Home />
   </div>
 </div>
 
