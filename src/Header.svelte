@@ -1,3 +1,7 @@
+<script>
+  import { Route } from 'svelte-micro';
+</script>
+
 <header class="page-header">
   <a class="page-name" href="/">Alex Cox</a>
   <nav class="page-nav">
