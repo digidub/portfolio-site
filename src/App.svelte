@@ -10,6 +10,8 @@
 </div>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
   :global(body) {
     font-family: Lato;
     background: #8ee4af;
