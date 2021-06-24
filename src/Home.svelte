@@ -1,4 +1,8 @@
-<main>
+<script>
+  import { fly } from 'svelte/transition';
+</script>
+
+<main transition:fly={{ x: 200, duration: 1000 }}>
   <h1 class="page-intro">
     I taught myself to build websites,
     <br />such as this one.
