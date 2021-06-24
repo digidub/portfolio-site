@@ -2,16 +2,18 @@
   import { Route } from 'svelte-micro';
 </script>
 
-<header class="page-header">
-  <a class="page-name" href="/">Alex Cox</a>
-  <nav class="page-nav">
-    <ul>
-      <li>Cv</li>
-      <li>Projects</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
-</header>
+<Route>
+  <header class="page-header">
+    <a class="page-name" href="/">Alex Cox</a>
+    <nav class="page-nav">
+      <ul>
+        <li><a href="/cv">Cv</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</Route>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
