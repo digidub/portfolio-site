@@ -1,5 +1,9 @@
 <script>
   import { Route } from 'svelte-micro';
+  import Contact from './Contact.svelte';
+  import Cv from './Cv.svelte';
+  import Home from './Home.svelte';
+  import Projects from './Projects.svelte';
 </script>
 
 <Route>
@@ -13,6 +17,20 @@
       </ul>
     </nav>
   </header>
+
+  <Route path="/"><Home /></Route>
+
+  <Route path="/cv">
+    <Cv />
+  </Route>
+
+  <Route path="/projects">
+    <Projects />
+  </Route>
+
+  <Route path="/contact">
+    <Contact />
+  </Route>
 </Route>
 
 <style>
