@@ -1,5 +1,8 @@
 <script>
   import { fly } from 'svelte/transition';
+  import PageSlide from '../components/PageSlide.svelte';
 </script>
 
-<p>Projects</p>
+<PageSlide>
+  <p>Projects</p>
+</PageSlide>
