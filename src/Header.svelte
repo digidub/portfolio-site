@@ -31,6 +31,11 @@
   <Route path="/contact">
     <Contact />
   </Route>
+
+  <Route fallback>
+    <h1>Page not found :(</h1>
+    <a href="/">Back to home</a>
+  </Route>
 </Route>
 
 <style>
