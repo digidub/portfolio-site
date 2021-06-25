@@ -1,9 +1,9 @@
 <script>
   import { fly } from 'svelte/transition';
-  import PageSlide from '../components/PageSlide.svelte';
+  import PageSlide from './Components/PageSlide.svelte';
 </script>
 
-//in:fly={{ x: 200, duration: 200, delay: 300 }} out:fly={{ x: -200, duration: 200 }}
+<!--in:fly={{ x: 200, duration: 200, delay: 300 }} out:fly={{ x: -200, duration: 200 }}-->
 
 <PageSlide>
   <main>

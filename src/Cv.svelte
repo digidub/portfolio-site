@@ -1,6 +1,6 @@
 <script>
   import { fly } from 'svelte/transition';
-  import PageSlide from '../components/PageSlide.svelte';
+  import PageSlide from './Components/PageSlide.svelte';
 </script>
 
 <PageSlide>
