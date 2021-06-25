@@ -6,7 +6,11 @@
   <div class="card-header">
     <h1 class="card-title">Shopping-cart</h1>
   </div>
-  <div class="card-body"><p>project description</p></div>
+  <div class="card-body">
+    <p class="description">
+      A responsive shopping-cart built using React and styled components. Read the full writeup on GitHub, and check the project out!
+    </p>
+  </div>
   <div class="card-footer"><a href="https://github.com/digidub/shopping-cart2"><img src="/assets/GitHub.png" alt="GH logo" /></a></div>
 </div>
 
@@ -28,7 +32,10 @@
     background-size: contain;
   }
   .card-title {
-    color: black;
+    color: #05386b;
     margin: 0.1em;
+  }
+  .description {
+    padding: 0.2em;
   }
 </style>
