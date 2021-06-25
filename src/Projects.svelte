@@ -5,6 +5,26 @@
 </script>
 
 <PageSlide>
-  <Card />
-  <p>Projects</p>
+  <main>
+    <h1 class="page-intro">Projects</h1>
+    <div class="projects">
+      <Card />
+    </div>
+  </main>
 </PageSlide>
+
+<style>
+  @media only screen and (min-width: 65em) {
+    .page-intro {
+      margin: auto;
+      max-width: 500px;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    .projects {
+      margin: auto;
+      max-width: 500px;
+    }
+  }
+</style>
