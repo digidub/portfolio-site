@@ -1,20 +1,30 @@
 <script>
 </script>
 
-<header class="page-header">
-	<a class="page-name" href="/">Alex Cox</a>
-	<nav class="page-nav">
-		<ul>
-			<li><a href="/cv">Cv</a></li>
-			<li><a href="/projects">Projects</a></li>
-			<li><a href="/contact">Contact</a></li>
-		</ul>
-	</nav>
-</header>
-<slot />
+<div class="container">
+	<div class="wrapper">
+		<header class="page-header">
+			<a class="page-name" href="/">Alex Cox</a>
+			<nav class="page-nav">
+				<ul>
+					<li><a href="/cv">Cv</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<slot />
+	</div>
+</div>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+	:root {
+		font-family: 'Lato';
+		background-color: #8ee4af;
+		color: #05386b;
+	}
 
 	.page-header {
 		padding: 1em 0 0.5em 0;
@@ -41,6 +51,7 @@
 
 	a {
 		text-decoration: none;
+		color: #05386b;
 	}
 
 	ul {
@@ -52,6 +63,30 @@
 	li {
 		display: inline;
 		padding: 0 0.25em;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		min-height: 100%;
+	}
+
+	.wrapper {
+		padding-bottom: 2em;
+		flex-grow: 1;
+		padding: 0 1em;
+		margin: auto;
+	}
+
+	@media only screen and (min-width: 64em) {
+		.container {
+			max-width: 990px;
+		}
+
+		.wrapper {
+			width: 100%;
+		}
 	}
 
 	@media only screen and (min-width: 40em) {
