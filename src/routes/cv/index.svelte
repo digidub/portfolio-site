@@ -8,7 +8,7 @@
 	<main>
 		<h1 class="page-intro">CV</h1>
 		<div class="cv">
-			<p>My CV</p>
+			<p>Download CV <a href="../../../static/CV0621.pdf">here</a></p>
 		</div>
 	</main>
 </PageSlide>
