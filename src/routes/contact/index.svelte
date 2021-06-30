@@ -8,7 +8,9 @@
 	<main>
 		<h1 class="page-intro">Contact</h1>
 		<div class="contact">
-			<p>contact me</p>
+			<p>I'd love to hear from you!</p>
+			<p><a href="mailto:alexwscox@gmail.com">alexwscox@gmail.com</a></p>
+			<p>07399 592 841</p>
 		</div>
 	</main>
 </PageSlide>
