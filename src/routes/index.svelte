@@ -1,7 +1,8 @@
 <script>
-	import { fly } from 'svelte/transition';
 	import PageSlide from '../Components/PageSlide.svelte';
 </script>
+
+<svelte:head><title>Alex Cox • Web Developer • Home</title></svelte:head>
 
 <PageSlide>
 	<main>

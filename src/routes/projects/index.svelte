@@ -9,6 +9,8 @@
 	}
 </script>
 
+<svelte:head><title>Alex Cox • Web Developer • Projects</title></svelte:head>
+
 <PageSlide>
 	<main>
 		<h1 class="page-intro">Projects</h1>
