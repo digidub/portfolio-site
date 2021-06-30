@@ -5,6 +5,8 @@
 	export let description;
 	export let liveLink;
 	export let repoLink;
+	import infoIcon from '../../static/info.svg';
+	import techIcon from '../../static/technologies.svg';
 </script>
 
 <div class="card">
@@ -12,14 +14,20 @@
 		<a href={repoLink}> <h2 class="card-title">{name}</h2></a>
 		<a href={repoLink}><img src="../../static/GitHub.png" alt="github logo" /></a>
 	</div>
-	<img src={image} alt="project" />
+	<a href={liveLink}><img src={image} alt="project" /></a>
 	<div class="card-body">
-		<p class="technologies">
-			{technologies}
-		</p>
-		<p class="description">
-			{description}
-		</p>
+		<div class="info">
+			<img src={techIcon} alt="technologies icon" />
+			<p>
+				{technologies}
+			</p>
+		</div>
+		<div class="info">
+			<img src={infoIcon} alt="info icon" />
+			<p>
+				{description}
+			</p>
+		</div>
 	</div>
 	<div class="card-footer">
 		<a href={liveLink}>Live</a>
@@ -51,6 +59,15 @@
 
 	h2 {
 		margin-bottom: 0px;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.info img {
+		margin-right: 10px;
 	}
 
 	/* .card {
