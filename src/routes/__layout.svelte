@@ -1,5 +1,6 @@
-<script>
-</script>
+<svelte:head>
+	<base target="_blank" />
+</svelte:head>
 
 <div class="container">
 	<div class="wrapper">
