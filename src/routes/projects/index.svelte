@@ -1,8 +1,6 @@
 <script>
 	import PageSlide from '../../Components/PageSlide.svelte';
 	import ProjectCard from '../../Components/ProjectCard.svelte';
-	import Card from '../../Components/ProjectCard.svelte';
-	// import fetchData from '../../lib/fetchData';
 
 	async function fetchData() {
 		const response = await fetch('../../static/projects.json');
