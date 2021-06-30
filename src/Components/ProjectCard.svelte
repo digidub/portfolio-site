@@ -29,12 +29,14 @@
 			</p>
 		</div>
 	</div>
-	<div class="card-footer">
-		<a href={liveLink}>Live</a>
-	</div>
 </div>
 
 <style>
+	.card {
+		margin-bottom: 20px;
+		border-bottom: 1px solid #05386b;
+	}
+
 	.card img {
 		max-width: 100%;
 	}
@@ -69,28 +71,4 @@
 	.info img {
 		margin-right: 10px;
 	}
-
-	/* .card {
-		height: 300px;
-		width: 400px;
-		border-radius: 15px;
-		background-color: #edf5e1;
-	}
-	.card-header {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
-		height: 50%;
-		background-image: url('https://i.imgur.com/JhXEWBq.png');
-		background-size: contain;
-	}
-	.card-title {
-		color: #05386b;
-		margin: 0.1em;
-	}
-	.description {
-		padding: 0.2em;
-	} */
 </style>
