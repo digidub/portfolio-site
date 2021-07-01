@@ -1,6 +1,7 @@
 <script>
 	import PageSlide from '../../components/PageSlide.svelte';
 	import ProjectCard from '../../components/ProjectCard.svelte';
+	import { Jumper } from 'svelte-loading-spinners';
 
 	async function fetchData() {
 		const response = await fetch('./projects.json');
@@ -21,7 +22,7 @@
 				why not follow my <a href="https://github.com/digidub">GitHub</a> to stay up to date?
 			</h3>
 			{#await fetchData()}
-				<pre>waiting</pre>
+				<Jumper size="60" color="#05386b" unit="px">.</Jumper>
 			{:then data}
 				{#each data.projects as project}
 					<ProjectCard {...project} />
