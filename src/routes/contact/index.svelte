@@ -1,5 +1,7 @@
 <script>
 	import PageSlide from '../../components/PageSlide.svelte';
+	import emailIcon from '../../../static/email.svg';
+	import phoneIcon from '../../../static/phone.svg';
 </script>
 
 <svelte:head><title>Alex Cox • Web Developer • Contact</title></svelte:head>
@@ -8,9 +10,15 @@
 	<main>
 		<h1 class="page-intro">Contact</h1>
 		<div class="contact">
-			<p>I'd love to hear from you!</p>
-			<p><a href="mailto:alexwscox@gmail.com">alexwscox@gmail.com</a></p>
-			<p>07399 592 841</p>
+			<h3>I'd love to hear from you!</h3>
+			<div class="contact-info">
+				<img src={emailIcon} alt="email icon" />
+				<p><a href="mailto:alexwscox@gmail.com">alexwscox@gmail.com</a></p>
+			</div>
+			<div class="contact-info">
+				<img src={phoneIcon} alt="phone icon" />
+				<p>07399 592 841</p>
+			</div>
 		</div>
 	</main>
 </PageSlide>
@@ -27,6 +35,25 @@
 		.contact {
 			margin: auto;
 			max-width: 500px;
+		}
+
+		.contact-info {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.contact-info img {
+			margin-right: 10px;
+		}
+
+		.contact-info a {
+			color: #edf5e1;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.contact-info a:hover {
+			border-bottom: 1px solid #edf5e1;
 		}
 	}
 </style>
