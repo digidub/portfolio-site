@@ -1,6 +1,7 @@
 <script>
-	import PageSlide from '../Components/PageSlide.svelte';
 	import { onMount } from 'svelte';
+	import { visit } from '../components/stores';
+	import PageSlide from '../components/PageSlide.svelte';
 
 	let phrase = `I taught myself to build websites,
 				such as this one.`;
@@ -10,13 +11,21 @@
 	let body = false;
 
 	const type = () => {
-		if (index < phrase.length) {
-			typedChars += phrase[index];
-			index += 1;
+		if (!$visit) {
+			if (index < phrase.length) {
+				typedChars += phrase[index];
+				index += 1;
+			} else {
+				clearInterval(typewriter);
+				body = true;
+				visit.set(true);
+			}
 		} else {
 			clearInterval(typewriter);
+			typedChars = phrase;
 			body = true;
 		}
+		return;
 	};
 
 	const typer = () => (typewriter = setInterval(type, 50));
