@@ -4,8 +4,16 @@
         "image": "shoppingcart.gif",
         "technologies": "React (useReducer, useContext, useEffect, custom hook), JavaScript, HTML, CSS, Styled Components",
         "description": "A responsive shopping-cart built using React and styled-components.",
-        "liveLink": "https://digidub.github.io/cards-against-cowmanity/",
+        "liveLink": "https://digidub.github.io/shopping-cart2/",
         "repoLink": "https://github.com/digidub/shopping-cart2"
+    },
+    {
+        "name": "This Portfolio site!",
+        "image": "portfolio.gif",
+        "technologies": "Svelte, SvelteKit, JavaScript, HTML, CSS",
+        "description": "A responsive portfolio site to showcase my development skills.",
+        "liveLink": "https://alexcodes.co.uk",
+        "repoLink": "https://github.com/digidub/portfolio-site"
     },
     {
         "name": "Cards against Cowmanity",
