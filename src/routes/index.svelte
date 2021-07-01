@@ -70,7 +70,8 @@
 <style>
 	.skills a {
 		color: #edf5e1;
-		font-weight: 600px;
+		font-weight: bold;
+		text-decoration: none;
 	}
 
 	.skills a:hover {
