@@ -16,7 +16,17 @@
 </PageSlide>
 
 <style>
-	@media only screen and (min-width: 65em) {
+	.cv a {
+		color: #edf5e1;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.cv a:hover {
+		border-bottom: 1px solid #edf5e1;
+	}
+
+	@media only screen and (min-width: 40em) {
 		.page-intro {
 			margin: auto;
 			max-width: 500px;
@@ -27,16 +37,6 @@
 		.cv {
 			margin: auto;
 			max-width: 500px;
-		}
-
-		.cv a {
-			color: #edf5e1;
-			font-weight: bold;
-			text-decoration: none;
-		}
-
-		.cv a:hover {
-			border-bottom: 1px solid #edf5e1;
 		}
 	}
 </style>

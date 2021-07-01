@@ -33,7 +33,7 @@
 </PageSlide>
 
 <style>
-	@media only screen and (min-width: 65em) {
+	@media only screen and (min-width: 40em) {
 		.page-intro {
 			margin: auto;
 			max-width: 500px;
@@ -45,19 +45,18 @@
 			margin: auto;
 			max-width: 500px;
 		}
+	}
+	.blurb {
+		margin-top: 0px;
+	}
 
-		.blurb {
-			margin-top: 0px;
-		}
+	.projects a {
+		color: #edf5e1;
+		font-weight: 600px;
+		text-decoration: none;
+	}
 
-		.projects a {
-			color: #edf5e1;
-			font-weight: 600px;
-			text-decoration: none;
-		}
-
-		.projects a:hover {
-			border-bottom: 1px solid #edf5e1;
-		}
+	.projects a:hover {
+		border-bottom: 1px solid #edf5e1;
 	}
 </style>

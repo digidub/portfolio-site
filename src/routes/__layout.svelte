@@ -12,7 +12,9 @@
 			<a class="page-name" href="/">Alex Cox</a>
 			<nav class="page-nav">
 				<ul>
-					<li><a aria-current={$page.path === '/cv' ? 'page' : undefined} href="/cv">Cv</a></li>
+					<li>
+						<a aria-current={$page.path === '/cv' ? 'page' : undefined} href="/cv">Cv</a>
+					</li>
 					<li>
 						<a aria-current={$page.path === '/projects' ? 'page' : undefined} href="/projects"
 							>Projects</a
