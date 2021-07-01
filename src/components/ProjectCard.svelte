@@ -12,7 +12,7 @@
 <div class="card">
 	<div class="card-header">
 		<a href={repoLink}> <h2 class="card-title">{name}</h2></a>
-		<a href={repoLink}><img src="../../static/GitHub.png" alt="github logo" /></a>
+		<a href={repoLink}><img src="./GitHub.png" alt="github logo" /></a>
 	</div>
 	<a href={liveLink}><img src={image} alt="project" /></a>
 	<div class="card-body">
