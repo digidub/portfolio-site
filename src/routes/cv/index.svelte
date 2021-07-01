@@ -1,5 +1,5 @@
 <script>
-	import PageSlide from '../../Components/PageSlide.svelte';
+	import PageSlide from '../../components/PageSlide.svelte';
 </script>
 
 <svelte:head><title>Alex Cox • Web Developer • CV</title></svelte:head>
@@ -8,7 +8,9 @@
 	<main>
 		<h1 class="page-intro">CV</h1>
 		<div class="cv">
-			<p>Download CV <a rel="external" href="./CV0621.pdf">here</a></p>
+			<h3>
+				You can download the latest copy of my CV <a rel="external" href="./CV0621.pdf">here!</a>
+			</h3>
 		</div>
 	</main>
 </PageSlide>
@@ -25,6 +27,16 @@
 		.cv {
 			margin: auto;
 			max-width: 500px;
+		}
+
+		.cv a {
+			color: #edf5e1;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.cv a:hover {
+			border-bottom: 1px solid #edf5e1;
 		}
 	}
 </style>
