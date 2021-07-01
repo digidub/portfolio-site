@@ -1,5 +1,6 @@
 /** @type {import('@sveltejs/kit').Config} */
 import adapter from '@sveltejs/adapter-static';
+//import adapter from '@sveltejs/adapter-netlify';
 
 const config = {
 	kit: {
@@ -9,7 +10,7 @@ const config = {
 			// default options are shown
 			pages: 'build',
 			assets: 'build',
-			fallback: null
+			fallback: 'index.html'
 		})
 	}
 };
