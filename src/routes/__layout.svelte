@@ -1,3 +1,7 @@
+<script>
+	import { page } from '$app/stores';
+</script>
+
 <svelte:head>
 	<base target="_blank" />
 </svelte:head>
@@ -8,9 +12,17 @@
 			<a class="page-name" href="/">Alex Cox</a>
 			<nav class="page-nav">
 				<ul>
-					<li><a href="/cv">Cv</a></li>
-					<li><a href="/projects">Projects</a></li>
-					<li><a href="/contact">Contact</a></li>
+					<li><a aria-current={$page.path === '/cv' ? 'page' : undefined} href="/cv">Cv</a></li>
+					<li>
+						<a aria-current={$page.path === '/projects' ? 'page' : undefined} href="/projects"
+							>Projects</a
+						>
+					</li>
+					<li>
+						<a aria-current={$page.path === '/contact' ? 'page' : undefined} href="/contact"
+							>Contact</a
+						>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -78,6 +90,11 @@
 		flex-grow: 1;
 		padding: 0 1em;
 		margin: auto;
+	}
+
+	[aria-current] {
+		color: #edf5e1;
+		font-weight: bold;
 	}
 
 	@media only screen and (min-width: 64em) {
