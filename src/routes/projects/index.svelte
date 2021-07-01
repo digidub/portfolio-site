@@ -2,9 +2,10 @@
 	import PageSlide from '../../components/PageSlide.svelte';
 	import ProjectCard from '../../components/ProjectCard.svelte';
 	import { Jumper } from 'svelte-loading-spinners';
+	import { base } from '$app/paths';
 
 	async function fetchData() {
-		const response = await fetch('./projects.json');
+		const response = await fetch(`${base}/projects.json`);
 		const data = await response.json();
 		return await data;
 	}

@@ -8,8 +8,8 @@ const config = {
 		target: '#svelte',
 		adapter: adapter({
 			// default options are shown
-			pages: 'build',
-			assets: 'build',
+			pages: '/personal-portfolio',
+			assets: '/personal-portfolio',
 			fallback: 'index.html'
 		})
 	}

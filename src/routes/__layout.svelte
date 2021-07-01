@@ -1,7 +1,9 @@
 <script>
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 </script>
 
+<!-- svelte-ignore component-name-lowercase -->
 <svelte:head>
 	<base target="_blank" />
 </svelte:head>
@@ -9,19 +11,19 @@
 <div class="container">
 	<div class="wrapper">
 		<header class="page-header">
-			<a class="page-name" href="/">Alex Cox</a>
+			<a class="page-name" href="{base}/">Alex Cox</a>
 			<nav class="page-nav">
 				<ul>
 					<li>
-						<a aria-current={$page.path === '/cv' ? 'page' : undefined} href="/cv">Cv</a>
+						<a aria-current={$page.path === '/cv' ? 'page' : undefined} href="{base}/cv">Cv</a>
 					</li>
 					<li>
-						<a aria-current={$page.path === '/projects' ? 'page' : undefined} href="/projects"
+						<a aria-current={$page.path === '/projects' ? 'page' : undefined} href="{base}/projects"
 							>Projects</a
 						>
 					</li>
 					<li>
-						<a aria-current={$page.path === '/contact' ? 'page' : undefined} href="/contact"
+						<a aria-current={$page.path === '/contact' ? 'page' : undefined} href="{base}/contact"
 							>Contact</a
 						>
 					</li>
