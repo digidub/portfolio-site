@@ -1,5 +1,29 @@
 <script>
 	import PageSlide from '../Components/PageSlide.svelte';
+	import { onMount } from 'svelte';
+
+	let phrase = `I taught myself to build websites,
+				such as this one.`;
+	let typedChars = '';
+	let index = 0;
+	let typewriter;
+	let body = false;
+
+	const type = () => {
+		if (index < phrase.length) {
+			typedChars += phrase[index];
+			index += 1;
+		} else {
+			clearInterval(typewriter);
+			body = true;
+		}
+	};
+
+	const typer = () => (typewriter = setInterval(type, 50));
+
+	onMount(() => {
+		typer();
+	});
 </script>
 
 <svelte:head><title>Alex Cox • Web Developer • Home</title></svelte:head>
@@ -7,28 +31,30 @@
 <PageSlide>
 	<main>
 		<h1 class="page-intro">
-			I taught myself to build websites,
-			<br />such as this one.
+			{typedChars}
 		</h1>
-
-		<div class="skills">
-			<section>
-				<h2>I'm a front-end web developer.</h2>
-				<p>HTML5, CSS3, JavaScript, React, Svelte</p>
-			</section>
-			<section>
-				<h2>...and I also know how things work under the hood.</h2>
-				<p>NPM, Webpack, Git</p>
-			</section>
-			<section>
-				<h2>I'm enthused about learning more</h2>
-				<p>Node.js, Test-driven development</p>
-			</section>
-			<section>
-				<h2>And I'm ready to offer my skills</h2>
-				<p>Why not check out my <a href="/projects">portfolio</a>?</p>
-			</section>
-		</div>
+		{#if body}
+			<PageSlide>
+				<div class="skills">
+					<section>
+						<h2>I'm a front-end web developer.</h2>
+						<p>HTML5, CSS3, JavaScript, React, Svelte</p>
+					</section>
+					<section>
+						<h2>...and I also know how things work under the hood.</h2>
+						<p>NPM, Webpack, Git</p>
+					</section>
+					<section>
+						<h2>I'm enthused about learning more</h2>
+						<p>Node.js, Test-driven development</p>
+					</section>
+					<section>
+						<h2>And I'm ready to offer my skills</h2>
+						<p>Why not check out my <a href="/projects">portfolio</a>?</p>
+					</section>
+				</div>
+			</PageSlide>
+		{/if}
 	</main>
 </PageSlide>
 
