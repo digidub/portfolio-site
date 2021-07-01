@@ -60,6 +60,7 @@
 		font-size: 80%;
 		text-align: center;
 		letter-spacing: 1px;
+		margin: 5px 0 5px 0;
 	}
 
 	a {
