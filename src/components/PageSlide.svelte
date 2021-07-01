@@ -1,7 +1,7 @@
 <script>
 	import { cubicInOut } from 'svelte/easing';
 
-	let duration = 250;
+	let duration = 350;
 	let delay = duration;
 
 	const transitionIn = () => ({
