@@ -1,5 +1,5 @@
 <script>
-	import PageSlide from '../../Components/PageSlide.svelte';
+	import PageSlide from '../../components/PageSlide.svelte';
 </script>
 
 <svelte:head><title>Alex Cox • Web Developer • Contact</title></svelte:head>
