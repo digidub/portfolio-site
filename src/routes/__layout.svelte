@@ -39,13 +39,13 @@
 
 	:root {
 		font-family: 'Lato';
-		background-color: #8ee4af;
-		color: #05386b;
+		background-color: #fff;
+		color: #2d3047;
 	}
 
 	.page-header {
 		padding: 1em 0 0.5em 0;
-		border-bottom: 1px solid #379683;
+		border-bottom: 1px solid #6d6d6d;
 		display: flex;
 		flex-direction: column;
 	}
@@ -56,7 +56,7 @@
 		text-align: center;
 		font-size: 3em;
 		text-decoration: none;
-		color: #edf5e1;
+		color: #e03c5a;
 	}
 
 	.page-nav {
@@ -69,7 +69,11 @@
 
 	a {
 		text-decoration: none;
-		color: #05386b;
+		color: #2d3047;
+	}
+
+	a:hover {
+		color: #ee9d9d;
 	}
 
 	ul {
@@ -98,7 +102,7 @@
 	}
 
 	[aria-current] {
-		color: #edf5e1;
+		color: #e03c5a;
 		font-weight: bold;
 	}
 
@@ -115,7 +119,7 @@
 	@media only screen and (min-width: 40em) {
 		.page-header {
 			padding: 1em 0 0.5em 0;
-			border-bottom: 1px solid #379683;
+			border-bottom: 1px solid #6d6d6d;
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: space-between;

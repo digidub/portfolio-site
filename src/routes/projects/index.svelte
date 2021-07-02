@@ -23,7 +23,7 @@
 				why not follow my <a href="https://github.com/digidub">GitHub</a> to stay up to date?
 			</h3>
 			{#await fetchData()}
-				<Jumper size="60" color="#05386b" unit="px">.</Jumper>
+				<Jumper size="60" color="#2d3047" unit="px">.</Jumper>
 			{:then data}
 				{#each data.projects as project}
 					<ProjectCard {...project} />
@@ -52,12 +52,12 @@
 	}
 
 	.projects a {
-		color: #edf5e1;
+		color: #e03c5a;
 		font-weight: 600px;
 		text-decoration: none;
 	}
 
 	.projects a:hover {
-		border-bottom: 1px solid #edf5e1;
+		border-bottom: 1px solid #e03c5a;
 	}
 </style>

@@ -50,12 +50,12 @@
 	}
 
 	.contact-info a {
-		color: #edf5e1;
+		color: #e03c5a;
 		font-weight: bold;
 		text-decoration: none;
 	}
 
 	.contact-info a:hover {
-		border-bottom: 1px solid #edf5e1;
+		border-bottom: 1px solid #e03c5a;
 	}
 </style>
