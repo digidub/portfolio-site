@@ -1,4 +1,5 @@
 <script>
+	export const prerender = true;
 	import { onMount } from 'svelte';
 	import { visit } from '../components/stores';
 	import PageSlide from '../components/PageSlide.svelte';
