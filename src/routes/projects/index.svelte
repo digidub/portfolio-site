@@ -1,7 +1,6 @@
 <script>
 	import PageSlide from '../../components/PageSlide.svelte';
 	import ProjectCard from '../../components/ProjectCard.svelte';
-	import { Jumper } from 'svelte-loading-spinners';
 	import { base } from '$app/paths';
 
 	async function fetchData() {
@@ -23,7 +22,7 @@
 				why not follow my <a href="https://github.com/digidub">GitHub</a> to stay up to date?
 			</h3>
 			{#await fetchData()}
-				<Jumper size="60" color="#2d3047" unit="px">.</Jumper>
+				<p>fetching projects...</p>
 			{:then data}
 				{#each data.projects as project}
 					<ProjectCard {...project} />
@@ -52,12 +51,12 @@
 	}
 
 	.projects a {
-		color: #e03c5a;
+		color: var(--title-color);
 		font-weight: 600px;
 		text-decoration: none;
 	}
 
 	.projects a:hover {
-		border-bottom: 1px solid #e03c5a;
+		border-bottom: 1px solid var(--title-color);
 	}
 </style>

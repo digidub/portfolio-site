@@ -18,13 +18,13 @@
 
 <style>
 	.cv a {
-		color: #e03c5a;
+		color: var(--title-color);
 		font-weight: bold;
 		text-decoration: none;
 	}
 
 	.cv a:hover {
-		border-bottom: 1px solid #e03c5a;
+		border-bottom: 1px solid var(--title-color);
 	}
 
 	@media only screen and (min-width: 40em) {

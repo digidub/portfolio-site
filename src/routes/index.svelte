@@ -70,13 +70,13 @@
 
 <style>
 	.skills a {
-		color: #e03c5a;
+		color: var(--title-color);
 		font-weight: bold;
 		text-decoration: none;
 	}
 
 	.skills a:hover {
-		border-bottom: 1px solid #e03c5a;
+		border-bottom: 1px solid var(--title-color);
 	}
 
 	@media only screen and (min-width: 40em) {

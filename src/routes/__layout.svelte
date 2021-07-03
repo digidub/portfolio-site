@@ -37,10 +37,18 @@
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+	:global(:root) {
+		--bg-color: #fff;
+		--text-color: #2d3047;
+		--border-color: #6d6d6d;
+		--title-color: #e03c5a;
+		--hover-color: #ee9d9d;
+	}
+
 	:root {
 		font-family: 'Lato';
-		background-color: #fff;
-		color: #2d3047;
+		background-color: var(--bg-color);
+		color: var(--text-color);
 	}
 
 	.page-header {
@@ -69,7 +77,7 @@
 
 	a {
 		text-decoration: none;
-		color: #2d3047;
+		color: var(--text-color);
 	}
 
 	a:hover {

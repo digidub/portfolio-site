@@ -34,7 +34,7 @@
 <style>
 	.card {
 		margin-bottom: 20px;
-		border-bottom: 1px solid #2d3047;
+		border-bottom: 1px solid var(--border-color);
 	}
 
 	.card img {
@@ -47,16 +47,16 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		margin-bottom: 10px;
-		border-bottom: 1px solid #fff;
+		border-bottom: 1px solid var(--background-color);
 	}
 
 	.card-header a {
 		text-decoration: none;
-		color: #2d3047;
+		color: var(--text-color);
 	}
 
 	.card-header:hover {
-		border-bottom: 1px solid #2d3047;
+		border-bottom: 1px solid var(--text-color);
 	}
 
 	h2 {
