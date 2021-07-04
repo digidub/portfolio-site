@@ -23,12 +23,12 @@
 			<nav class="page-nav">
 				<ul>
 					<li>
-						<a aria-current={$page.path === '/cv' ? 'page' : undefined} href="{base}/cv">Cv</a>
-					</li>
-					<li>
 						<a aria-current={$page.path === '/projects' ? 'page' : undefined} href="{base}/projects"
 							>Projects</a
 						>
+					</li>
+					<li>
+						<a aria-current={$page.path === '/cv' ? 'page' : undefined} href="{base}/cv">Cv</a>
 					</li>
 					<li>
 						<a aria-current={$page.path === '/contact' ? 'page' : undefined} href="{base}/contact"
