@@ -1,8 +1,12 @@
 <script>
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
+	import sun from '../../static/sun.svg';
+	import moon from '../../static/moon.svg';
+	let darkMode = false;
 
 	function toggle() {
+		darkMode = !darkMode;
 		window.document.body.classList.toggle('dark');
 	}
 </script>
@@ -31,7 +35,13 @@
 							>Contact</a
 						>
 					</li>
-					<li><button on:click={toggle}>darkmode</button></li>
+					<li class="darkmode-toggle">
+						{#if !darkMode}
+							<input type="image" src={moon} on:click={toggle} alt="toggle dark mode" />
+						{:else}
+							<input type="image" src={sun} on:click={toggle} alt="toggle light mode" />
+						{/if}
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -84,6 +94,11 @@
 		text-align: center;
 		letter-spacing: 1px;
 		margin: 5px 0 5px 0;
+	}
+
+	.darkmode-toggle {
+		height: 16px;
+		vertical-align: middle;
 	}
 
 	a {
