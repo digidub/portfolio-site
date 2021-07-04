@@ -55,7 +55,7 @@
 	}
 
 	:global(body.dark) {
-		--bg-color: #2d3047;
+		--bg-color: #20252d;
 		--text-color: #f9f9f9;
 		--border-color: #6d6d6d;
 		--title-color: #e03c5a;
