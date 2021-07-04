@@ -1,6 +1,10 @@
 <script>
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
+
+	function toggle() {
+		window.document.body.classList.toggle('dark');
+	}
 </script>
 
 <!-- svelte-ignore component-name-lowercase -->
@@ -27,6 +31,7 @@
 							>Contact</a
 						>
 					</li>
+					<li><button on:click={toggle}>darkmode</button></li>
 				</ul>
 			</nav>
 		</header>
@@ -37,23 +42,29 @@
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-	:global(:root) {
+	:global(body) {
 		--bg-color: #fff;
 		--text-color: #2d3047;
 		--border-color: #6d6d6d;
 		--title-color: #e03c5a;
 		--hover-color: #ee9d9d;
-	}
-
-	:root {
 		font-family: 'Lato';
 		background-color: var(--bg-color);
 		color: var(--text-color);
+		transition: all 0.5s;
+	}
+
+	:global(body.dark) {
+		--bg-color: #2d3047;
+		--text-color: #f9f9f9;
+		--border-color: #6d6d6d;
+		--title-color: #e03c5a;
+		--hover-color: #ee9d9d;
 	}
 
 	.page-header {
 		padding: 1em 0 0.5em 0;
-		border-bottom: 1px solid #6d6d6d;
+		border-bottom: 1px solid var(--bg-color);
 		display: flex;
 		flex-direction: column;
 	}
