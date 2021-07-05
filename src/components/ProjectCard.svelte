@@ -7,8 +7,8 @@
 	export let repoLink;
 	import infoIcon from '../../static/info.svg';
 	import techIcon from '../../static/technologies.svg';
-	import ghLogoLight from '../../static/GitHubLight.png';
-	import ghLogoDark from '../../static/GitHubDark.png';
+	import ghLogoLight from '../../static/githublight.png';
+	import ghLogoDark from '../../static/githubdark.png';
 	import { isDarkMode } from '../components/stores';
 </script>
 
