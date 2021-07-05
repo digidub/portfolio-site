@@ -1,12 +1,12 @@
 <script>
 	import { page } from '$app/stores';
+	import { isDarkMode } from '../components/stores';
 	import { base } from '$app/paths';
 	import sun from '../../static/sun.svg';
 	import moon from '../../static/moon.svg';
-	let darkMode = false;
 
 	function toggle() {
-		darkMode = !darkMode;
+		isDarkMode.set(!$isDarkMode);
 		window.document.body.classList.toggle('dark');
 	}
 </script>
@@ -36,7 +36,7 @@
 						>
 					</li>
 					<li class="darkmode-toggle">
-						{#if !darkMode}
+						{#if !$isDarkMode}
 							<input type="image" src={moon} on:click={toggle} alt="toggle dark mode" />
 						{:else}
 							<input type="image" src={sun} on:click={toggle} alt="toggle light mode" />
