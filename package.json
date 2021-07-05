@@ -21,8 +21,5 @@
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte": "^3.34.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"svelte-loading-spinners": "^0.1.5"
-	}
+	"type": "module"
 }
