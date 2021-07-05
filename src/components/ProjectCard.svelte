@@ -7,8 +7,6 @@
 	export let repoLink;
 	import infoIcon from '../../static/info.svg';
 	import techIcon from '../../static/technologies.svg';
-	import ghLogoLight from '../../static/githublight.png';
-	import ghLogoDark from '../../static/githubdark.png';
 	import { isDarkMode } from '../components/stores';
 </script>
 
@@ -17,9 +15,9 @@
 		<a href={repoLink}> <h2 class="card-title">{name}</h2></a>
 		<a href={repoLink}>
 			{#if !$isDarkMode}
-				<img src={ghLogoDark} alt="github logo" />
+				<img src="../../static/githubdark.png" alt="github logo" />
 			{:else}
-				<img src={ghLogoLight} alt="github logo" />
+				<img src="../../static/githublight.png" alt="github logo" />
 			{/if}
 		</a>
 	</div>
