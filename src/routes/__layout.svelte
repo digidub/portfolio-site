@@ -43,6 +43,7 @@
 		--border-color: #6d6d6d;
 		--title-color: #e03c5a;
 		--hover-color: #ee9d9d;
+		--other-color: #fff;
 	}
 
 	:root {
