@@ -9,7 +9,7 @@
 		<h1 class="page-intro">CV</h1>
 		<div class="cv">
 			<h3>
-				You can download the latest copy of my CV <a rel="external" href="./cv0621.pdf">here!</a>
+				You can download the latest copy of my CV <a rel="external" href="/cv0621.pdf">here!</a>
 			</h3>
 		</div>
 	</main>
