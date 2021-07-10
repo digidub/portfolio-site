@@ -1,8 +1,8 @@
 <script>
-	export const prerender = true;
 	import { onMount } from 'svelte';
 	import { visit } from '../components/stores';
 	import PageSlide from '../components/PageSlide.svelte';
+	export const prerender = true;
 
 	let phrase = `I taught myself to build websites,
 				such as this one.`;
