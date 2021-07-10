@@ -59,8 +59,11 @@
 						<p>🎯 Node.js, 🎯 Test-Driven Development</p>
 					</section>
 					<section>
-						<h2>Though I'm ready to offer my skills.</h2>
-						<p>Why not check out my <a href="/projects">portfolio</a>?</p>
+						<h2>Though I'm ready to offer my skills now.</h2>
+						<p>
+							Why not check out my <a target="_self" href="/projects">portfolio</a> and
+							<a target="_self" href="/cv">CV</a>?
+						</p>
 					</section>
 				</div>
 			</PageSlide>
