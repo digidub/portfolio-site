@@ -1,7 +1,7 @@
 {
     "projects" : [{
         "name": "Shopping Cart",
-        "image": "shoppingcart.gif",
+        "image": "/shoppingcart.gif",
         "technologies": "React (useReducer, useContext, useEffect, custom hook), JavaScript, HTML, CSS, Styled Components",
         "description": "A responsive shopping-cart built using React and styled-components.",
         "liveLink": "https://digidub.github.io/shopping-cart2/",
@@ -9,7 +9,7 @@
     },
     {
         "name": "This Portfolio site!",
-        "image": "portfolio.gif",
+        "image": "/portfolio.gif",
         "technologies": "Svelte, SvelteKit, JavaScript, HTML, CSS",
         "description": "A responsive portfolio site to showcase my development skills.",
         "liveLink": "https://alexcodes.co.uk",
@@ -17,7 +17,7 @@
     },
     {
         "name": "Cards against Cowmanity",
-        "image": "cardsagainstcowmanity.gif",
+        "image": "/cardsagainstcowmanity.gif",
         "technologies": "React (useState, useEffect), JavaScript, HTML, CSS",
         "description": "A responsive memoory (sorry) card game built using React functional components.",
         "liveLink": "https://digidub.github.io/cards-against-cowmanity/",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Task Temple",
-        "image": "tasktemple.gif",
+        "image": "/tasktemple.gif",
         "technologies": "JavaScript, HTML, CSS",
         "description": "An advanced todo list app built with 'vanilla' JavaScript. Organise your tasks into projects that automatically calculate progress.",
         "liveLink": "https://digidub.github.io/task-temple/",
@@ -33,7 +33,7 @@
     },
     {
         "name": "Tic Tac Toe (Noughts and Crosses)",
-        "image": "tictactoe.gif",
+        "image": "/tictactoe.gif",
         "technologies": "JavaScript, HTML, CSS",
         "description": "A 'vanilla' JavaScript tictactoe game. Play against another human or a super hard AI, built using the `minimax` algorithm.",
         "liveLink": "https://digidub.github.io/tictactoe/",
