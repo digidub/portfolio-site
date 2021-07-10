@@ -74,7 +74,7 @@
 
 	.page-header {
 		padding: 1em 0 0.5em 0;
-		border-bottom: 1px solid var(--bg-color);
+		border-bottom: 1px solid var(--border-color);
 		display: flex;
 		flex-direction: column;
 	}
