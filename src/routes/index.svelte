@@ -55,11 +55,11 @@
 						<p>NPM, Webpack, Git</p>
 					</section>
 					<section>
-						<h2>I'm enthused about learning more</h2>
-						<p>Node.js, Test-driven development</p>
+						<h2>But I'm not stopping there!</h2>
+						<p>🎯 Node.js, 🎯 Test-Driven Development</p>
 					</section>
 					<section>
-						<h2>And I'm ready to offer my skills</h2>
+						<h2>Though I'm ready to offer my skills.</h2>
 						<p>Why not check out my <a href="/projects">portfolio</a>?</p>
 					</section>
 				</div>
