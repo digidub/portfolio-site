@@ -15,9 +15,9 @@
 		<a href={repoLink}> <h2 class="card-title">{name}</h2></a>
 		<a href={repoLink}>
 			{#if !$isDarkMode}
-				<img src="../../static/githubdark.png" alt="github logo" />
+				<img src="/githubdark.png" alt="github logo" />
 			{:else}
-				<img src="../../static/githublight.png" alt="github logo" />
+				<img src="/githublight.png" alt="github logo" />
 			{/if}
 		</a>
 	</div>
