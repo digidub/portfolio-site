@@ -4,7 +4,7 @@ const config = {
 	kit: {
 		target: '#svelte',
 		adapter: adapter(),
-		trailingSlash: 'ignore'
+		trailingSlash: 'always'
 	}
 };
 
