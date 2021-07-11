@@ -3,7 +3,8 @@ import adapter from '@sveltejs/adapter-netlify';
 const config = {
 	kit: {
 		target: '#svelte',
-		adapter: adapter()
+		adapter: adapter(),
+		trailingSlash: 'never'
 	}
 };
 
