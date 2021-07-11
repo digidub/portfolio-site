@@ -26,7 +26,7 @@
 						<a
 							target="_self"
 							aria-current={$page.path === '/projects' ? 'page' : undefined}
-							href="{base}/projects">Projects</a
+							href="/projects">Projects</a
 						>
 					</li>
 					<li>
