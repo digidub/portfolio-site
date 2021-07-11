@@ -1,3 +1,7 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script>
 	import PageSlide from '../../components/PageSlide.svelte';
 	import ProjectCard from '../../components/ProjectCard.svelte';
