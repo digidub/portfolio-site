@@ -10,6 +10,7 @@
 		"deploy": "npm run build && npx gh-pages -d portfolio-site -t true"
 	},
 	"devDependencies": {
+		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/adapter-netlify": "^1.0.0-next.17",
 		"@sveltejs/adapter-static": "^1.0.0-next.13",
 		"@sveltejs/kit": "next",
